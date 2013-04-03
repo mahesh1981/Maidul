@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" 
+   >
+
+    <RelativeLayout
+        android:id="@+id/pic_layout"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content" 
+         android:layout_marginTop="0dp">
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/four_squares_drawable" />
+
+        <LinearLayout
+            android:layout_width="145dp"
+            android:layout_height="120dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginLeft="0dp" >
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+               android:layout_marginRight="7dp" 
+                >
+
+                <ImageView
+                    android:id="@+id/pic1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"                    
+                    android:src="@drawable/icon" 
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="7dp"/>
+
+                <ImageView
+                    android:id="@+id/pic2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"                   
+                    android:src="@drawable/icon"
+                    android:layout_marginRight="0dp" 
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="7dp"/>
+            </LinearLayout>
+
+             <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="0dp">
+
+                <ImageView
+                    android:id="@+id/pic3"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/icon" 
+                  android:layout_marginLeft="20dp"/>
+
+                <ImageView
+                    android:id="@+id/pic4"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="0dp"
+                    android:src="@drawable/icon" 
+                    android:layout_marginLeft="18dp"/>
+                
+                 <TextView
+            android:id="@+id/tvNumberOfMembers"
+            android:layout_width="30dp"
+            android:layout_height="20dp"           
+            android:background="@drawable/main_ui_friends_well_group_count"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/default_active_users_num"
+            android:textColor="@color/white"
+            android:textStyle="bold" 
+           android:layout_marginRight="0dp"
+           android:layout_marginLeft="0dp" 
+           android:layout_marginTop="20dp"/>  
+
+            </LinearLayout> 
+            
+            
+           <!--  <TextView
+            android:id="@+id/tvNumberOfMembers"
+            android:layout_width="30dp"
+            android:layout_height="20dp"           
+            android:background="@drawable/main_ui_friends_well_group_count"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/default_active_users_num"
+            android:textColor="@color/white"
+            android:textStyle="bold" 
+           android:layout_marginRight="0dp"
+           android:layout_marginLeft="0dp" 
+           android:layout_marginTop="20dp"/> -->
+            
+        </LinearLayout>
+
+     
+        <!-- <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+                
+                
+            >
+        <TextView
+            android:id="@+id/tvNumberOfMembers"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/main_ui_friends_well_group_count"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/default_active_users_num"
+            android:textColor="@color/white"
+            android:textStyle="bold" 
+            android:layout_marginLeft="65dp"/></RelativeLayout> -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp">
+
+        <ImageView
+            android:id="@+id/imgGroupType"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_ui_speaker_led" 
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:id="@+id/tvGroupName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/label_friends"
+                  
+            android:layout_marginLeft="10dp"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

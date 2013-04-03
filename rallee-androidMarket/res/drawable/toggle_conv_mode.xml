@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item state_pressed="true" android:drawable="@drawable/main_ui_mode_toggle_bg_on_grey_voice" android:state_checked="true"/>
+    <item state_pressed="true" android:drawable="@drawable/main_ui_mode_toggle_bg_on_grey_text" android:state_checked="false"/>
+    <item state_checked="true" android:drawable="@drawable/main_ui_mode_toggle_bg_on_grey_text"/>
+    <item android:drawable="@drawable/main_ui_mode_toggle_bg_on_grey_voice"/>
+
+</selector>

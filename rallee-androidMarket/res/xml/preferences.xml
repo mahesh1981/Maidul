@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/label_audio" >
+        <ListPreference
+            android:defaultValue="3"
+            android:entries="@array/speex_quality"
+            android:entryValues="@array/speex_quality_values"
+            android:key="qualityrate"
+            android:summary="@string/label_chose_speex_codec_quality_rate"
+            android:title="@string/label_codec_quality_rate" />
+    </PreferenceCategory>
+    <!--
+         <PreferenceCategory android:title="TTS" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="tts"
+            android:summary="Enable/disable text-to-speech features."
+            android:title="Text-to-speech" />
+
+        <EditTextPreference
+            android:dependency="tts"
+            android:key="ttsbtn"
+            android:negativeButtonText="TTS already installed."
+            android:positiveButtonText="There is no tts on your device."
+            android:summary="Text-to-speech features."
+            android:title="Install text-to-speech" />
+    </PreferenceCategory>
+    -->
+    <PreferenceCategory android:title="@string/label_location" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="use_fine_locating"
+            android:summary="@string/label_fine_locating_sum"
+            android:title="@string/label_fine_locating_use" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/label_random" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="random_feature"
+            android:summary="@string/label_check_for_random"
+            android:title="@string/label_random_feature" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="over_18"
+            android:summary="@string/label_settings_over_18_title"
+            android:title="@string/label_settings_over_18" />
+        
+<!--         Part of unfinished functionality for automatic shutdown of random feature during a specified time          -->
+
+<!--         <CheckBoxPreference  -->
+<!--             android:defaultValue="false" -->
+<!--             android:enabled="false" -->
+<!--             android:key="random_autoon" -->
+<!--             android:summary="@string/label_pref_random_autoon" -->
+<!--             android:title="@string/label_pref_random_autoon_title"/> -->
+<!--         <Preference  -->
+<!--             android:key="random_set_hours_start" -->
+<!--             android:enabled="false" -->
+<!--             android:title="@string/lable_pref_random_set_hours_start"/> -->
+<!--         <Preference  -->
+<!--             android:key="random_set_hours_stop" -->
+<!--             android:enabled="false" -->
+<!--             android:title="@string/lable_pref_random_set_hours_stop"/> -->
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/label_about" >
+        <Preference
+            android:key="about_dialog"
+            android:summary="@string/label_about_text"
+            android:title="@string/label_about_rallee" />
+    </PreferenceCategory>
+    <!--
+             <PreferenceCategory android:title="Notification Visibility" >
+    	<CheckBoxPreference
+            android:defaultValue="false"
+            android:key="notification_visibility"
+            android:summary="Change the Rallee Notification Visibility"
+            android:title="Set Notification Visibility" />
+    </PreferenceCategory>
+    -->
+    <PreferenceCategory android:title="@string/label_synchronization">
+        <Preference 
+            android:key="button_sync"
+            android:title="@string/label_sync_title"
+            android:summary="@string/label_sync_text"/>
+        
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/label_disconnect" >
+        <Preference
+            android:key="disconnect"
+            android:summary="@string/label_disconnect_q"
+            android:title="@string/label_disconnect" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/label_delete_rallee_account" >
+        <Preference
+            android:key="delete_rallee_account"
+            android:summary="@string/label_delete_rallee_account_q"
+            android:title="@string/label_delete_rallee_account" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="country">
+        <item>USA</item>
+        <item>Srbija</item>
+        <item>Canada</item>
+        <item>India</item>
+        <item>Hungary</item>
+        <item>Macedonia, The Former Yugoslav Republic of</item>
+    </string-array>
+
+</resources>

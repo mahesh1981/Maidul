@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="40dp"
+    android:background="@drawable/confirm_random_dialog_background"
+    android:orientation="vertical" >
+
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="140dp" >
+ <TextView
+                android:id="@+id/dialog_random_call_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColorLink="@color/white" />
+ 
+<!--             android:text="Vladimir Aba Abdul Radenković de Nikaraguva" -->
+        <LinearLayout
+            android:id="@+id/dialog_random_call_ll_pic_name_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+              android:layout_marginTop="25dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/dialog_random_call_user_pic_container"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="visible" >
+                
+
+                <ImageView
+                    android:id="@+id/dialog_random_call_user_pic"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/dialog_random_call_user_pic_effect"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/user_pic_effect"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+           
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/dialog_random_call_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/dialog_random_call_searching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_random_call_progress"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:text="@string/searching_for_user"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColorLink="@color/white"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/dialog_random_call_profile_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_random_call_ll_pic_name_container"
+            android:autoLink="email"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColorLink="@color/white"        
+            android:visibility="visible" />
+    </RelativeLayout>
+
+       <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:padding="4dp">
+
+        <Button
+            android:id="@+id/dialog_random_call_btnCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/confirm_random_dialog_button_lighter"
+            android:enabled="true"
+            android:layout_weight="1"
+            android:text="@string/label_cancel"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@drawable/confirm_random_dialog_button_text_color" />
+
+        <Button
+            android:id="@+id/dialog_random_call_btnPrev"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/confirm_random_dialog_button_lighter"
+            android:enabled="false"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@drawable/confirm_random_dialog_button_text_color" 
+			android:text="@string/label_previous" />
+        
+        <Button
+            android:id="@+id/dialog_random_call_btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/confirm_random_dialog_button_lighter"
+            android:enabled="false"
+            android:layout_marginRight="4dp"
+            android:text="@string/label_next"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@drawable/confirm_random_dialog_button_text_color" />
+
+        <Button
+            android:id="@+id/dialog_random_call_btnCall"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="162"
+            android:background="@drawable/confirm_random_dialog_button_darker"
+            android:enabled="false"
+            android:text="@string/label_call"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@drawable/confirm_random_dialog_button_text_color" />
+
+    </LinearLayout>
+
+</LinearLayout>

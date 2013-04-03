@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/pic_layout"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:gravity="bottom" >
+
+        <ImageView
+            android:id="@+id/item_pic_gallery_voicemail"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dock_icon_voicemail" />
+        
+        <!-- background of tvNumOfVoicemail needs to be changed -->
+
+         <TextView
+             android:id="@+id/tvNumOfVoicemail"
+             android:layout_width="30dp"
+             android:layout_height="20dp"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             
+             android:background="@drawable/main_ui_friends_well_group_count"
+             
+             android:gravity="center|center_horizontal"
+             android:singleLine="true"
+             android:text="@string/default_active_users_num"
+             android:textAppearance="?android:attr/textAppearanceSmall"
+             android:textColor="@color/white" />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/label_voicemail"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

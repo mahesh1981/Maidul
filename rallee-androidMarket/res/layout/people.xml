@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <!-- android:background="@drawable/grill_background" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" 
+            android:padding="4dp"
+            android:background="@drawable/contacts_list_header_bg">
+
+			<EditText
+                 android:id="@+id/etFilter"
+                 android:layout_width="match_parent"
+                 android:layout_height="fill_parent"
+                 android:background="@drawable/contacts_list_search_bg"
+                 android:textColor="@color/white"
+                 android:ems="10"
+                 android:hint="@string/hint_type_to_search"
+                 android:inputType="textPersonName"
+                 android:paddingLeft="40dip" 
+                 android:layout_gravity="center_vertical">
+                 
+<!--                 <requestFocus /> -->
+            </EditText>
+            
+<!--             <Button -->
+<!--                 android:id="@+id/btnPlus" -->
+<!--                 android:layout_width="40dp" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="@string/label_plus_symbol" /> -->
+
+<!--             <Button -->
+<!--                 android:id="@+id/btnSettings" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight="5.61" -->
+<!--                 android:text="@string/label_settings" /> -->
+        </LinearLayout>
+
+
+       
+
+            <RelativeLayout
+                android:id="@+id/rlContactsGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <GridView
+                    android:id="@+id/gvContacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="4"
+                    android:verticalSpacing="5dp" >
+                </GridView>
+				
+                <TextView android:id="@+id/tvSearchNoMatch"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/white"
+                    android:text="@string/label_search_no_match"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dip"
+ 					android:visibility="gone"
+                    />
+                
+                <ProgressBar
+                    android:id="@+id/pbGridLoading"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFakeRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgPeopleFakeSide"
+            android:layout_width="30dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_wood_grain_left" 
+            android:focusable="true"/>
+
+        <FrameLayout
+            android:id="@+id/flPeopleFakeBottom"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:focusable="true">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

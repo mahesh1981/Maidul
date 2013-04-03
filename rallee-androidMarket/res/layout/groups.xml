@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/channels_ui_dim_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llGroupsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp" >
+
+        <ImageButton
+            android:id="@+id/imgbtnClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/channels_ui_moving_function_bar_btn_close" />
+
+        <TextView
+            android:id="@+id/tvRalleeGroups"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:text="@string/label_rallee_groups"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPrivateGroupsSection"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tvPrivateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_private"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/imgArrowPrivate"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/channels_ui_moving_function_bar_btn_close_browse" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/privateGroupsSlot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llFacebookGroupsSection"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tvFacebookLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_facebook"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/imgArrowFacebook"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/channels_ui_moving_function_bar_btn_close_browse" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/facebookGroupsSlot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llPublicGroupsSection"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tvPublicLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_public"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/imgArrowPublic"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/channels_ui_moving_function_bar_btn_close_browse" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/publicGroupsSlot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+</LinearLayout>

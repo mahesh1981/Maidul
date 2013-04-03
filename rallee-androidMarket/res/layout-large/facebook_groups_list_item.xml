@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@drawable/channels_ui_moving_function_bar"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/pic_layout"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true" 
+         android:layout_marginTop="17dp">
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/main_ui_friends_well_group_icon" />
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" 
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/pic1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_margin="1dp" />
+
+                <ImageView
+                    android:id="@+id/pic2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_margin="1dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|top" >
+
+                <ImageView
+                    android:id="@+id/pic3"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_margin="1dp" />
+
+                <ImageView
+                    android:id="@+id/pic4"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_margin="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/tvNumberOfMembers"
+            android:layout_width="15dp"
+            android:layout_height="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/profile_pic"
+            android:src="@drawable/text_mode_facebook_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvGroupItemName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pic_layout"
+        android:layout_toLeftOf="@+id/imgbtnGroupItem"
+        android:layout_toRightOf="@+id/pic_layout"
+        android:gravity="center_vertical"
+        android:lines="2"
+        android:paddingLeft="6dp"
+        android:text="@string/default_group_name"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+       android:layout_marginTop="15dp"
+        android:textStyle="bold" 
+        />
+
+    <!-- android:text="UsernameHere left you a new Voicemail" -->
+
+    <ImageButton
+        android:id="@+id/imgbtnGroupItem"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/talk_button_small" />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_friends_list_item"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:padding="6dip" >
+
+    <CheckBox
+        android:id="@+id/cbMemberSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" 
+        />
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/cbMemberSelected"
+        android:background="@drawable/main_ui_friends_well_friend_icon" android:padding="3dp" android:src="@drawable/channels_ui_wood_object_btn_members_off"/>
+
+    <ImageView
+        android:id="@+id/small_pic"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/profile_pic"
+        android:layout_alignRight="@+id/profile_pic"
+        android:background="@drawable/main_ui_friends_well_friend_icon"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:gravity="center_vertical"        
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:ellipsize="marquee"
+        android:singleLine="true"        
+        android:textSize="20sp"/>
+    <!--
+     <TextView
+        android:id="@+id/letter"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@id/name"
+        android:layout_alignParentRight="true"
+        
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+	 />
+
+
+
+    -->
+
+</RelativeLayout>

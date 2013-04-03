@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"    
+    android:gravity="center|left"
+    android:orientation="vertical" >
+
+  <!--   <LinearLayout
+        
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:orientation="vertical" 
+        android:layout_marginTop="41dp"> -->
+
+        <RelativeLayout
+            android:id="@+id/pic_layout"
+            android:layout_width="140dp"
+            android:layout_height="200dp"
+            android:gravity="bottom" 
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:id="@+id/item_pic"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/channels_item_drawable" />
+
+            <TextView
+                android:id="@+id/tvNumOfChannels"
+                android:layout_width="30dp"
+                android:layout_height="20dp"               
+                android:background="@drawable/main_ui_friends_well_group_count"
+                android:gravity="center|center_horizontal"
+                android:singleLine="true"
+                android:text="@string/default_active_users_num"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"                
+                android:textStyle="bold" 
+                android:layout_marginTop="130dp"
+               android:layout_marginLeft="110dp" />
+            
+            
+             <TextView
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/label_channels"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold" 
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="15dp"/>
+            
+           
+            
+        </RelativeLayout>
+
+       <!--  <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal" 
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="@string/label_channels"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout> -->
+    <!-- </LinearLayout> -->
+
+</LinearLayout>

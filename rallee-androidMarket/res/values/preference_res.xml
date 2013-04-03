@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="speex_quality">
+        <item>@string/label_very_high</item>
+        <item>@string/label_high</item>
+        <item>@string/label_good</item>
+        <item>@string/label_medium</item>
+        <item>@string/label_low</item>
+    </string-array>
+    <string-array name="speex_quality_values">
+        <item>10</item>
+        <item>7</item>
+        <item>5</item>
+        <item>3</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="server_addresses">
+        <item>ec2-174-129-43-112.compute-1.amazonaws.com</item>
+        <item>107.21.101.95</item>
+        <item>195.252.93.46</item>
+        <!-- <item>107.21.109.104</item> -->
+    </string-array>
+<!--     <string-array name="server_names">
+        <item>GlobalServer</item>
+        <item>Test 1</item>
+        <item>Test 2</item>
+    </string-array>
+    <string-array name="test_groups">
+        <item>No group</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array> -->
+    
+
+</resources>

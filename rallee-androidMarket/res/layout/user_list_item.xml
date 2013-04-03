@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_height="95dp"
+    android:layout_margin="5dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlUser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/pic_layout"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/main_ui_friends_well_friend_icon"
+            android:gravity="bottom" >
+
+            <ImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="6dp"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/user_pic_effect" />
+
+            <ImageView
+                android:id="@+id/mic_user_talking"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/main_ui_friends_well_user_in_active_call_icon" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/pic_layout"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/img_led_status"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/main_ui_speaker_led" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:gravity="center_vertical|left"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="@string/default_person_name"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/darkenView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_transparent"
+            android:visibility="gone" >
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

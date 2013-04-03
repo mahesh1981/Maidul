@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:padding="8dp"
+    android:background="@drawable/right_panel_list_item_background">
+       
+    <ImageView
+        android:id="@+id/imgHistoryListItem" 
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"/>
+    
+    <ImageView
+        android:id="@+id/imgHistoryListItemEffect"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/user_pic_effect"
+        android:visibility="invisible"/>
+    
+    <ImageView
+        android:id="@+id/imgHistoryListItemSmall" 
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+       	android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imgHistoryListItem"/>
+    
+    <TextView 
+        android:id="@+id/txtHistoryListItemName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingLeft="6dp"
+        android:lines="2"
+        android:layout_toRightOf="@+id/imgHistoryListItem"
+        android:textAppearance="@android:style/TextAppearance.Medium"/>
+	
+    <TextView 
+        android:id="@+id/txtHistoryListItemTime"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:lines="1"
+        android:paddingLeft="6dp"
+        android:layout_toRightOf="@+id/imgHistoryListItem"
+        android:layout_below="@+id/txtHistoryListItemName"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        />
+    
+	<TextView 
+        android:id="@+id/txtHistoryListItemExtract"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:lines="1"
+        android:paddingLeft="6dp"
+        android:layout_toRightOf="@+id/imgHistoryListItem"
+        android:layout_below="@+id/txtHistoryListItemTime"
+        android:textAppearance="@android:style/TextAppearance.Small"/>
+	
+	<ImageView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:src="@drawable/alerts_row_arrow"/>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="cyan">#ff00bfff</color>
+    <color name="cyan_light">#ff5CCBF6</color>
+    <color name="cyan_dark">#ff2F687E</color>
+    <color name="white_transparent">#55ffffff</color>
+    <color name="light_white_transparent">#22ffffff</color>
+    <color name="dark_white_transparent">#aaffffff</color>
+    <color name="black_transparent">#55000000</color>
+    <color name="dark_black_transparent">#ee000000</color>
+    <color name="black_transparent_2">#99000000</color>
+    <color name="light_black_transparent">#22000000</color>
+    <color name="light_blue">#ff748186</color>
+    <color name="dark_purple_transparent">#bb000033</color>
+    <color name="light_purple_transparent">#22000033</color>
+    <color name="cyan_active_group">#aa00bfff</color>
+    
+</resources>

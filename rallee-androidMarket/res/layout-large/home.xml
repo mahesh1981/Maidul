@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRalleeAppContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/grill_background" >
+
+    <FrameLayout
+        android:id="@+id/sideSlot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llRalleeMainPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical" >
+
+        <!-- android:background="@drawable/grill_background"> -->
+
+        <RelativeLayout
+            android:id="@+id/rlTopPanelSlot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" >
+
+            <FrameLayout
+                android:id="@+id/topPanelSlot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </FrameLayout>
+
+            <ToggleButton
+                android:id="@+id/tbtnConvMode"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/toggle_conv_mode"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlBottomPanelSlot"
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:layout_gravity="center" >
+
+            <FrameLayout
+                android:id="@+id/bottomPanelSlot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </FrameLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/bottomExtensionPanelSlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/topSlot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/notificationSlot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" >
+    </FrameLayout>
+
+</RelativeLayout>

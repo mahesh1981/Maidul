@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:background="@drawable/right_panel_list_item_background"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/imgVoicemailListItem"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/txtVoicemailListItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgVoicemailListItem"
+        android:layout_toRightOf="@+id/imgVoicemailListItem"
+        android:paddingLeft="6dp"
+        android:text="Adam Smith"
+        android:textAppearance="@android:style/TextAppearance.Medium" 
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/txtVoicemailListItemTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVoicemailListItemName"
+        android:layout_toRightOf="@+id/imgVoicemailListItem"
+        android:paddingLeft="6dp"
+        android:text="1:12"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:textColor="@color/cyan"
+        android:textStyle="bold" 
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/txtVoicemailListItemWhen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVoicemailListItemName"
+        android:layout_centerHorizontal="true"
+        android:text="	3 days ago"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:textStyle="bold" 
+        android:textSize="15sp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgbtnVoicemailViewText"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/voicemail_btn_view_text" />
+
+        <ImageButton
+            android:id="@+id/imgbtnVoicemailPlay"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/transparent"
+            android:src="@drawable/voicemail_btn_play" />
+    </LinearLayout>
+<!-- 
+    <ProgressBar
+        android:id="@+id/progbarVoicemail"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgVoicemailListItem"
+        android:paddingLeft="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/imgVoicemailListItem" 
+        android:progress=""/>
+-->
+</RelativeLayout>

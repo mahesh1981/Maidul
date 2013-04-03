@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+     <string name="app_id">422592304447150</string>
+
+	<string name="AppServiceURL">http://ec2-174-129-43-112.compute-1.amazonaws.com:8080/RadioRuntService/
+       </string>  
+
+	<!-- <string name="AppServiceURL">http://107.21.109.104:8080/RadioRuntService/</string> -->
+    <!-- <string name="AppServiceURL">http://192.168.0.58/RadioRuntService/</string> -->
+    <!-- <string name="AppServiceURL">http://195.252.93.46:8080/RadioRuntService/</string> -->
+    <!-- <string name="AppServiceURL">http://ec2-107-21-189-198.compute-1.amazonaws.com:8080/RadioRuntService/</string> -->
+
+
+    <!-- <string name="AppServiceURL">http://195.252.93.46:8080/RadioRuntService/</string> -->
+
+</resources>

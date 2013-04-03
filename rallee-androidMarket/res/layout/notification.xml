@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRootNotification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llControlsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/confirm_random_dialog_background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:id="@+id/llIncomingCallContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/imgbtnNotifAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/main_ui_btn_answer_call" />
+
+            <ImageButton
+                android:id="@+id/imgbtnNotifReject"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/main_ui_btn_reject_call" />
+
+            <ImageButton
+                android:id="@+id/imgbtnNotifSilent"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0"
+                android:background="@color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/silent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

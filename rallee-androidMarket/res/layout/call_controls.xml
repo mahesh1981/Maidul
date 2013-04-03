@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:measureAllChildren="true"
+        android:persistentDrawingCache="scrolling" >
+
+        <Gallery
+            android:id="@+id/galleryOfFriends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center|center_vertical"
+            android:spacing="10dip" />
+
+        <ImageButton
+            android:id="@+id/imgbtnEndCallHomeActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/main_ui_btn_end_active_call" />
+
+        <ImageButton
+            android:id="@+id/imgbtnCancelCallHomeActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/main_ui_btn_cancel_call_attempt" />
+
+        <LinearLayout
+            android:id="@+id/llIncomingCallBtnHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:id="@+id/imgbtnRejectCall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/main_ui_btn_reject_call" />
+
+            <ImageButton
+                android:id="@+id/imgbtnAcceptCall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/main_ui_btn_answer_call" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLoadingFriends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_loading_friends"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llIncallButtonHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="10dp" >
+
+            <ImageButton
+                android:id="@+id/imgbtnParticipants"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/contacts_list_header_btn_bg"
+                android:scaleType="centerInside"
+                android:src="@drawable/button_participants" />
+
+            <ImageButton
+                android:id="@+id/imgbtnEndCallSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/main_ui_btn_end_active_call_small" />
+
+            <ImageButton
+                android:id="@+id/imgbtnAddUser"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/contacts_list_header_btn_bg"
+                android:scaleType="centerInside"
+                android:src="@drawable/main_ui_btn_make_group_off" />
+        </LinearLayout>
+
+    </ViewFlipper>
+
+</LinearLayout>

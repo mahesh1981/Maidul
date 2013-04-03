@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="GetChannelsServiceDone">GetChannelsServiceDone</string>
+    <string name="GetChannelsServiceFailed">GetChannelsServiceFailed</string>
+    
+    <string name="GetServerIpAddressServiceDone">GetServerIpAddressServiceDone</string>
+    <string name="GetServerIpAddressServiceFailed">GetServerIpAddressServiceFailed</string>
+    
+    <string name="GetServerIdServiceDone">GetServerIdServiceDone</string>
+    <string name="GetServerIdServiceFailed">GetServerIdServiceFailed</string>
+    
+    <string name="RegisterToAppServiceDone">RegisterToAppServiceDone</string>
+    <string name="RegisterToAppServiceFailed">RegisterToAppServiceFailed</string>
+    
+    <string name="UnregisterToAppServiceDone">UnregisterToAppServiceDone</string>
+    <string name="UnregisterToAppServiceFailed">UnregisterToAppServiceFailed</string>
+    
+    <string name="SendPushMessageServiceDone">SendPushMessageServiceDone</string>
+    <string name="SendPushMessageServiceFailed">SendPushMessageServiceFailed</string>
+    
+    <string name="GetParticipantsServiceDone">GetParticipantsServiceDone</string>
+    <string name="GetParticipantsServiceFailed">GetParticipantsServiceFailed</string>
+    
+    <string name="GetLeastParticipantsServerDone">GetLeastParticipantsServerDone</string>
+    <string name="GetLeastParticipantsServerFailed">GetLeastParticipantsServerFailed</string>
+    
+    <string name="SetInsertUserServiceDone">SetInsertUserServiceDone</string>
+    <string name="SetInsertUserServiceFailed">SetInsertUserServiceFailed</string>
+    
+    <string name="SetDeleteUserServiceDone">SetDeleteUserServiceDone</string>
+    <string name="SetDeleteUserServiceFailed">SetDeleteUserServiceFailed</string>
+    
+    <string name="SetOver18ServiceDone">SetOver18ServiceDone</string>
+    <string name="SetOver18ServiceFailed">SetOver18ServiceFailed</string>
+    
+    <string name="SetRandomServiceDone">SetRandomServiceDone</string>
+    <string name="SetRandomServiceFailed">SetRandomServiceFailed</string>
+    
+    <string name="GetOver18ServiceDone">GetOver18ServiceDone</string>
+    <string name="GetOver18ServiceFailed">Getover18ServiceFailed</string>
+    
+    <string name="GetRandomServiceDone">GetRandomServiceDone</string>
+    <string name="GetRandomServiceFailed">GetRandomServiceFailed</string>
+    
+    <string name="CheckForNewReleaseServiceDone">CheckForNewReleaseServiceDone</string>
+    <string name="CheckForNewReleaseServiceFailed">CheckForNewReleaseServiceFailed</string>
+    
+    <string name="SetUserLocationServiceDone">SetUserLocationServiceDone</string>
+    <string name="SetUserLocationServiceFailed">SetUserLocationServiceFailed</string>
+	
+    <string name="GetRandomUserServiceDone">GetRandomUserServiceDone</string>
+    <string name="GetRandomUserServiceFailed">GetRandomUserServiceFailed</string>
+    
+    <string name="SetReportUserServiceDone">SetReportUserServiceDone</string>
+    <string name="SetReportUserServiceFailed">SetReportUserServiceFailed</string>
+    
+    <string name="SetUserStateServiceDone">SetUserStateServiceDone</string>
+    <string name="SetUserStateServiceFailed">SetUserStateServiceFailed</string>
+    
+    <string name="GetUserServiceDone">GetUserServiceDone</string>
+    <string name="GetUserServiceFailed">GetUserServiceFailed</string>
+
+</resources>

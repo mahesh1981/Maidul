@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/add_users"
+        android:title="@string/add_users"/>
+    <item
+        android:id="@+id/manage_group"
+        android:title="@string/manage_group"/>
+    <item
+        android:id="@+id/hide_group"
+        android:title="@string/hide_group"/>
+
+</menu>

@@ -1,0 +1,49 @@
+* Rallee FAQ
+
+Why can't I download Rallee to my Android device?
+
+First, verify that your operating system is running OS 2.2 or higher. To check, go to device Settings > About Phone > 
+Android Version. Then, make sure you allow installations of non-Market apps.
+
+* To allow installations of non-Market apps:
+
+Go to Settings > Security > Make sure that "Unknown Sources" is marked (if not, mark it and tap OK). Note that this will all you to install any applications that are not in the Google Play Store. The pre-released version of Rallee is not in the Google Play Store and thus will only be accessible through invite only.
+
+If you have have Android operating system 2.2 or higher and tried these steps and still can't download the app, please note that we have been made aware that certain Android phones are not able to download the app even though they have the correct operating system and requirements. We hope to resolve this soon. 
+
+* Why is the app stuck "Connecting"?
+
+Please make sure that your device is connected to the Internet via WiFi, mobile wireless data, LAN, or other network. This should be done before launching the Rallee application. If you still notice the app is stuck in this state, force quit the app and relaunch it.
+
+How to force quit the Rallee app:
+
+Go to Settings > Manage Apps > Rallee > Force stop
+
+* Troubleshooting
+
+If you're experiencing a problem with the Rallee app please try to resolve the issue by following these four steps. Be sure that you've installed both the most recent Rallee version and your device's most updated operating system. 
+ 
+1.  Check your internet connection.
+
+From your homescreen (steps vary depending on device), goto Settings  > Wireless and Networks > Airplane Mode > ON. Wait 5-10 seconds, then turn Airplane Mode > OFF. Then, try using other apps / an internet browser to ensure that internet is working properly on your device. If it is, launch Rallee to see if your problem has been resolved.  If it isn't, connect to a different Wi-Fi source if one is available, and relaunch Rallee.
+ 
+2.  Turn phone off, then on. 
+
+To turn your phone off and then on, press and hold down the Power button. Once the device has been off for 5 seconds, 
+press and hold the Power button to turn on the device. Relaunch Rallee to see if the problem has been resolved. 
+
+3. Force quit and relaunch Rallee.
+
+From your homescreen (steps vary depending on device), go to Settings > Applications > Rallee > Clear data > Ok. Then, 
+return to your homescreen (steps vary depending on device), Settings > Applications > Rallee > Force stop > Ok. Then, 
+relaunch Rallee.
+
+4. If force quitting and relaunching Rallee doesn't help, delete and reinstall Rallee:
+
+From your homescreen (steps vary depending on device), go to Settings > Applications > Manage Applications > Rallee > Uninstall. Then, go to http://www.irallee.com/rallee.apk, reinstall Rallee, and sign in using Facebook. 
+
+Note: If you performed all of these steps and your problem persists, please email us to let us know that you've followed these steps and are still having problems. Provide as detailed of a description of your issue as you can. Include information on what type of device you are using and what operating system is running on your phone. 
+
+
+
+ 

@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_friendlit_member_item"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:padding="6dip" >
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dip"
+        android:padding="2dp"
+        android:src="@drawable/main_ui_friends_well_friend_icon" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toLeftOf="@+id/cbMemberSelected"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@id/name"
+        android:layout_toLeftOf="@+id/cbMemberSelected"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:ellipsize="marquee"
+        android:singleLine="true" />
+
+    <CheckBox
+        android:id="@+id/cbMemberSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

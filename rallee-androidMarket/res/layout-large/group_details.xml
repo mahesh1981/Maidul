@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/channels_ui_dim_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llGroupsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageButton
+            android:id="@+id/imgbtnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/channels_ui_moving_function_bar_btn_left_arrow" />
+
+        <TextView
+            android:id="@+id/tvViewLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/label_group_details"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+             android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/imgbtnEditSave"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/channels_ui_moving_function_bar_btn_edit" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llGroupDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:focusable="false"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:id="@+id/imgGroupImage"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/button_participants" />
+
+            <RelativeLayout
+                android:id="@+id/rlGroupNameContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/tvGroupName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/default_group_name"
+                    android:textAppearance="?android:attr/textAppearanceLarge" 
+                     android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/etGroupName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/confirm_random_dialog_btnno"
+                    android:hint="@string/hint_group_name"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlGroupDescriptionContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ScrollView
+                android:id="@+id/descriptionContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+
+                <TextView
+                    android:id="@+id/tvGroupDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/no_description_group"
+                    android:textAppearance="?android:attr/textAppearanceMedium" 
+                     android:textSize="20sp" />
+
+            </ScrollView>
+
+            <EditText
+                android:id="@+id/etGroupDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/confirm_random_dialog_btnno"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/hint_desctiption"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:visibility="gone" >
+
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llButtonHolder"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"       
+        android:gravity="center_horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgbtnReport"
+            android:layout_width="100dp"
+            android:layout_height="100dp"             
+            android:background="@drawable/report_user" 
+            android:layout_marginRight="100dp"/>
+
+        <ImageButton
+            android:id="@+id/imgbtnEnter"
+            android:layout_width="100dp"
+            android:layout_height="100dp"             
+            android:background="@drawable/talk_button_small" /> 
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNumberOfMembers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/default_online_users_number"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+          />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/main_ui_friends_well_background"
+        android:orientation="vertical" 
+        android:layout_marginTop="0dp">
+
+        <Gallery
+            android:id="@+id/galleryOfMembers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:gravity="center_vertical"
+            android:spacing="10dip" 
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+</LinearLayout>

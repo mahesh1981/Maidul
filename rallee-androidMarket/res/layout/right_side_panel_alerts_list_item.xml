@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:background="@drawable/right_panel_list_item_background"
+    android:padding="6dp" >
+
+    <ImageView
+        android:id="@+id/imgAlertsListItem"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+    	<ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" 
+        android:src="@drawable/user_pic_effect"/>
+    	
+    <TextView
+        android:id="@+id/txtAlertsListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imgbtnAlertsListItemArrow"
+        android:layout_toRightOf="@+id/imgAlertsListItem"
+        
+        android:lines="3"
+        android:paddingLeft="6dp"
+        
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textStyle="bold" />
+<!--    android:text="UsernameHere left you a new Voicemail" -->
+		
+    <TextView 
+        android:id="@+id/txtAlertsListItemTime"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:lines="1"
+        android:paddingLeft="6dp"
+        android:layout_toRightOf="@+id/imgAlertsListItem"
+        
+		android:layout_below="@+id/txtAlertsListItem"        
+        android:textAppearance="@android:style/TextAppearance.Small"/>
+
+    <ImageView
+        android:id="@+id/imgbtnAlertsListItemArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/alerts_row_arrow" />
+
+</RelativeLayout>
